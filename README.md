@@ -152,5 +152,3 @@ This project demonstrates skills directly applicable to roles in:
 MIT License — see [LICENSE](LICENSE) for details.
 
 ---
-
-*Part of the [GIS Data Science Portfolio](https://github.com/Suvamp) by Ken.*
