@@ -1,0 +1,54 @@
+name: riverside_econ
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  # ── Python ──────────────────────────────────────────────────────────────────
+  - python=3.11
+
+  # ── Core scientific stack ────────────────────────────────────────────────────
+  - numpy
+  - pandas
+  - scipy
+  - matplotlib
+  - seaborn
+
+  # ── Geospatial core ──────────────────────────────────────────────────────────
+  - geopandas          # spatial DataFrames, shapefile I/O
+  - pyproj             # CRS reprojection (EPSG:4326 → EPSG:3857)
+  - shapely            # geometry primitives
+  - fiona              # file-format driver for GeoPandas
+  - rtree              # spatial indexing (required by GeoPandas)
+  - contextily         # basemap tile downloads for static maps
+
+  # ── OpenStreetMap / POI extraction ───────────────────────────────────────────
+  - osmnx              # pull commercial POIs & street networks from OSM
+
+  # ── Spatial statistics (Moran's I, LISA, weights matrix) ─────────────────────
+  - libpysal           # spatial weights, lag operators
+  - esda               # Moran's I, LISA, spatial autocorrelation
+  - splot              # quick PySAL visualisation helpers
+
+  # ── Machine learning (K-Means, DBSCAN) ───────────────────────────────────────
+  - scikit-learn
+
+  # ── Interactive mapping ───────────────────────────────────────────────────────
+  - folium             # Leaflet-based interactive HTML maps
+  - branca             # colormap / HTML utilities used by Folium
+
+  # ── Geographically Weighted Regression ───────────────────────────────────────
+  - pip                # mgwr is pip-only; pip block below
+  - pip:
+      - mgwr           # GWR / MGWR implementation (no conda package)
+
+  # ── Notebook / IDE ────────────────────────────────────────────────────────────
+  - jupyterlab
+  - ipykernel
+  - ipywidgets
+
+  # ── Utilities ─────────────────────────────────────────────────────────────────
+  - requests           # Census & AFDC API calls
+  - tqdm               # progress bars for city-by-city OSM loops
+  - python-dotenv      # load Census API key from .env file

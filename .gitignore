@@ -1,0 +1,14 @@
+.DS_Store
+__MACOSX/
+__pycache__/
+*.py[cod]
+.env
+.ipynb_checkpoints/
+cache/
+env/
+venv/
+.conda/
+data/processed/
+Project10_StepByStep_Guide.docx
+Project10_StepByStep_Guide.pdf
+Project10_Riverside_Economic_Development.ipynb
