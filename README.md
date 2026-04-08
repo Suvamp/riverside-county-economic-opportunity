@@ -1,5 +1,4 @@
 # Riverside County Commercial Opportunity Zone Analysis
-### GIS Data Science Portfolio — Project 10
 
 [![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://www.python.org/)
 [![GeoPandas](https://img.shields.io/badge/GeoPandas-0.14-green)](https://geopandas.org/)
